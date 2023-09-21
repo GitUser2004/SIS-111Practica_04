@@ -17,7 +17,7 @@ using namespace std;
 int calculo(int,int,int,int,int,int);
 
 int main(){
-    int year1,mes1,dia1;
+    int year1,mes1,dia1;        // declaracion de todas las variables
     cout<<"Ingrese una fecha actual por"<<endl;
     cout<<"Dia: ";
     cin>>dia1;
@@ -37,6 +37,7 @@ int main(){
     return 0;
 }
 
+// resta los años meses y dias para hallar la edad
 int calculo(int dia1,int mes1,int year1,int dia2,int mes2,int year2){
     int edad;
     edad=(year1-year2)+((mes1/12)-(mes2/12))+((dia1/365)-(dia2/365));

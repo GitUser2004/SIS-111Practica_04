@@ -14,24 +14,20 @@
 
 using namespace std;
 
-void imprimir(int[]);
+struct datos{
+    char nombre[12][30];
+    int edad[12];
+    float estatura[12];
+    float peso[12];
+};
 
 int main(){
-
-    char nombre[12][30];
+    datos comp;
     for(int i=0;i<12;i++){
-        cin>>nombre[i];
-    }
-    cout<<"Lista de nombres: ";
-    for(int i=0;i<12;i++){
-        cout<<nombre[i]<<" ";
+        cin>>comp.nombre[i][30];
+        cout<<comp.nombre[i][30]<<endl;
     }
     return 0;
 }
 
-void imprimir(int nombre[]){
-    for(int i=0;i<12;i++){
-        cout<<nombre[i]<<" ";
-    }
-}
 

@@ -24,6 +24,7 @@ int main(){
     return 0;
 }
 
+// si el año es divisible entre 4 para saber si es biciesto o no;
 int calculo(int year){
     if(year%4==0){
         cout<<"El año es bisiesto";
